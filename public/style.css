@@ -1,0 +1,89 @@
+* {
+    font-family: "Karla";
+    background-color: #F5F7FB;
+    color: #293264;
+}
+
+.start-container {
+    padding: 150px;
+    display: block;
+    text-align: center;
+}
+
+.game-title {
+    font-weight: 700;
+    font-size: 31.25px;
+    font-size: 2.5rem;
+    line-height: 37px;
+    text-align: center;
+}
+
+.start-button {
+    font-family: 'Inter';
+    font-size: 1.1rem;
+    background-color: #4D5B9E;
+    color: #F5F7FB;
+    border-radius: 15px;
+    border: none;
+    width: 193px;
+    height: 52px;
+    cursor: pointer;
+}
+
+.question-container {
+    padding: 50px 100px;
+    display: block;
+}
+
+.question {
+    font-size: 1.2rem;
+    padding: 10px 0px;
+}
+
+.answer-button {
+    border: 1px solid #4D5B9E;
+    border-radius: 7.94239px;
+    cursor: pointer;
+    margin: 5px 5px;
+    height: 1.5rem;
+    font-size: 1rem;
+    min-width: 40px;
+    width: auto; 
+}
+
+.light-answer-button {
+    background-color: #F5F7FB;
+}
+
+.dark-answer-button {
+    background-color: #4D5B9E;
+    color: white;
+}
+
+.dark-bg-color {
+    background-color: red;
+}
+
+.white-bg-color {
+    background-color: blue;
+}
+
+.check-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4D5B9E;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.correct-answer-p {
+    font-size: 1.2rem;
+    color: rgb(0, 86, 0);
+}
