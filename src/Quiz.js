@@ -3,6 +3,7 @@ import Question from "./Question"
 import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
 import { initColor } from "./color"
+import { resetState } from "./score"
 
 export default function Quiz() {
 
@@ -69,7 +70,8 @@ export default function Quiz() {
         setStartAgain(false)
         setRestart(prev => !prev)
         dispatch(initColor("light-bg-color"))
-        // YOU NEED TO CHANGE ALL ANSWERS BUTTONS TO DEFAULT COLOR
+        dispatch(resetState())
+        // YOU NEED TO CHANGE ALL ANSWERS BUTTONS TO THE DEFAULT COLOR
     }
 
     const styleScore= {

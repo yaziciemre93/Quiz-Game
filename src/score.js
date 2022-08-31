@@ -6,10 +6,13 @@ export const scoreSlice = createSlice({
     reducers: {
         calculate: (state,action) => {
             state.value += action.payload
+        },
+        resetState: (state) => {
+            state.value = 0
         }
     }
 })
 
-export const {calculate} = scoreSlice.actions
+export const {calculate, resetState} = scoreSlice.actions
 
 export default scoreSlice.reducer
