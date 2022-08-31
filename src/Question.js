@@ -14,7 +14,7 @@ export default function Question(props) {
             <div className="question" key={props.index}>{props.question}</div>
                 {props.answers.map((answer,index)=> {
                     return (
-                        <Button answers={props.answers} mutateButtons={mutateButtons} setMutateButtons={setMutateButtons} key={index} answer={answer} value={answer} correctAnswer={answer.correctAnswer} />
+                        <Button answers={props.answers} mutateButtons={mutateButtons} setMutateButtons={setMutateButtons} key={index} answer={answer} value={answer} correctAnswer={props.correctAnswer} />
                     )
             })}
         </>
