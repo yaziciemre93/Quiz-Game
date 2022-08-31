@@ -2,7 +2,6 @@ import React from "react"
 import Question from "./Question"
 import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
-import { initColor } from "./color"
 import { resetState } from "./score"
 
 export default function Quiz() {
@@ -48,7 +47,6 @@ export default function Quiz() {
 
     // RENDER QUESTIONS
     const questionElements = data.map((question, index) => {
-
         let answers = question.incorrect_answers
 
         return (
@@ -63,13 +61,11 @@ export default function Quiz() {
     // RENDER RESTART BUTTON
     function calcScore() {
         setStartAgain(true)
-
     }
 
     function resQuiz() {
         setStartAgain(false)
         setRestart(prev => !prev)
-        dispatch(initColor("light-bg-color"))
         dispatch(resetState())
         // YOU NEED TO CHANGE ALL ANSWERS BUTTONS TO THE DEFAULT COLOR
     }
